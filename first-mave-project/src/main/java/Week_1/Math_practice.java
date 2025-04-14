@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package Week_1;
 
 public class Math_practice {
     public static void main(String[] args) {
