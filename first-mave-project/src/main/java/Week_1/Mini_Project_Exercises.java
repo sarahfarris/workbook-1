@@ -1,5 +1,6 @@
 package Week_1;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Mini_Project_Exercises {
@@ -49,6 +50,79 @@ public class Mini_Project_Exercises {
 
         // Exercise 7
         int random_nm = (int) Math.floor(Math.random() * 6) + 1;
+        if (random_nm % 2 == 0) {
+            System.out.println("The number is even");
+        } else {
+            System.out.println("The number is odd");
+        }
+
+        // Exercise 8 - Critical Hit Chance
+        System.out.println("What is your luck stat?");
+        int luck_stat = user_input.nextInt();
+        if (luck_stat > 50) {
+            System.out.println("Critical Hit!");
+        } else {
+            System.out.println("Normal Hit");
+        }
+        // Exercise 9 - Character Class Check
+        System.out.println("What is your character class?");
+        String char_class = user_input.next();
+        if (char_class.equals("warrior")) {
+            System.out.println("Your starting weapon is a sword.");
+        } else if (char_class.equals("mage")) {
+            System.out.println("Your starting weapon is a staff");
+        }
+        // Exercise 10 - Magic Number Guess
+        int secret_number = 7;
+        System.out.println("Guess a number");
+        int guessed_number = user_input.nextInt();
+        if (guessed_number == 7) {
+            System.out.println("You guessed right!");
+        } else {
+            System.out.println("You lost!");
+        }
+
+        // Exercise 11 - Speed Trap
+        System.out.println("How fast are you going?");
+        int speed = user_input.nextInt();
+        if (speed >= 100) {
+            System.out.println("Too fast!");
+        } else {
+            System.out.println("Safe Speed");
+        }
+
+//        //Exercise 12
+
+//        String[] choices = {"Rock", "Paper", "Scissors"};
+//        String computer_move = choices[new Random().nextInt(choices.length)];
+//
+//        System.out.println("Rock, paper or scissors?");
+//        String answer = user_input.next();
+//
+//        Random random = new Random();
+//        if (answer.equals("rock") + newRandom[0]) {
+//            System.out.println("The computer chose rock, it's a tie!");
+//        } else if (answer.equals("rock") + choices == [1]) {
+//            System.out.println("The computer chose Paper, paper beats rock!");
+//        } else if (answer.equals("rock") + choices == [2]) {
+//            System.out.println("The computer chose scissors, you win!");
+//        } else if (answer.equals("paper"), choices[0]) {
+//            System.out.println("The computer chose rock, you win!");
+//        } else (answer.equals("paper"), choices[1]) {
+//            System.out.println("The computer chose paper, it's a tie!");
+//        } else if (answer.equals("paper"), choices[2]) {
+//            System.out.println("The computer chose scissors, you lose!");
+//        } else if (answer.equals("scissors"), choices[0]) {
+//            System.out.println("The computer chose rock, you lose!");
+//        } else if (answer.equals("scissors"), choices[1]) {
+//            System.out.println("The computer chose paper, you win!");
+//        } else if (answer.equals("scissors"), choices[2]) {
+//            System.out.println("The computer chose scissors, it's a tie!");
+//        }
+// STILL STRUGGLING WITH SYNTAX AND USE OF RANDOM INPUT ON JAVA
+
+
+
 
 
 
