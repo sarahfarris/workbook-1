@@ -93,32 +93,35 @@ public class Mini_Project_Exercises {
 
 //        //Exercise 12
 
-//        String[] choices = {"Rock", "Paper", "Scissors"};
-//        String computer_move = choices[new Random().nextInt(choices.length)];
-//
-//        System.out.println("Rock, paper or scissors?");
-//        String answer = user_input.next();
-//
-//        Random random = new Random();
-//        if (answer.equals("rock") + newRandom[0]) {
-//            System.out.println("The computer chose rock, it's a tie!");
-//        } else if (answer.equals("rock") + choices == [1]) {
-//            System.out.println("The computer chose Paper, paper beats rock!");
-//        } else if (answer.equals("rock") + choices == [2]) {
-//            System.out.println("The computer chose scissors, you win!");
-//        } else if (answer.equals("paper"), choices[0]) {
-//            System.out.println("The computer chose rock, you win!");
-//        } else (answer.equals("paper"), choices[1]) {
-//            System.out.println("The computer chose paper, it's a tie!");
-//        } else if (answer.equals("paper"), choices[2]) {
-//            System.out.println("The computer chose scissors, you lose!");
-//        } else if (answer.equals("scissors"), choices[0]) {
-//            System.out.println("The computer chose rock, you lose!");
-//        } else if (answer.equals("scissors"), choices[1]) {
-//            System.out.println("The computer chose paper, you win!");
-//        } else if (answer.equals("scissors"), choices[2]) {
-//            System.out.println("The computer chose scissors, it's a tie!");
-//        }
+        String[] choices = {"Rock", "Paper", "Scissors"};
+        Random random = new Random();
+        int computer_move = random.nextInt(choices.length);
+        String computer_move1 = choices[computer_move];
+
+        System.out.println("Rock, paper or scissors?");
+        String answer = user_input.nextLine();
+        user_input.nextLine();
+
+        random = new Random();
+        if (answer.equals("rock") && computer_move1.equals("Rock")) {
+            System.out.println("The computer chose rock, it's a tie!");
+        } else if (answer.equals("rock") && computer_move1.equals("Paper")) {
+            System.out.println("The computer chose Paper, paper beats rock!");
+        } else if (answer.equals("rock") && computer_move1.equals("Scissors")) {
+            System.out.println("The computer chose scissors, you win!");
+        } else if (answer.equals("paper") && computer_move1.equals("Rock")) {
+            System.out.println("The computer chose rock, you win!");
+        } else if (answer.equals("paper") && computer_move1.equals("Paper")) {
+            System.out.println("The computer chose paper, it's a tie!");
+        } else if (answer.equals("paper") && computer_move1.equals("Scissors")) {
+            System.out.println("The computer chose scissors, you lose!");
+        } else if (answer.equals("scissors") && computer_move1.equals("Rock")) {
+            System.out.println("The computer chose rock, you lose!");
+        } else if (answer.equals("scissors") && computer_move1.equals("Paper")) {
+            System.out.println("The computer chose paper, you win!");
+        } else if (answer.equals("scissors") && computer_move1.equals("Scissors")) {
+            System.out.println("The computer chose scissors, it's a tie!");
+        }
 // STILL STRUGGLING WITH SYNTAX AND USE OF RANDOM INPUT ON JAVA
 
 
