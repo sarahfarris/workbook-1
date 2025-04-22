@@ -1,7 +1,6 @@
 package Week_2;
 
 import java.util.Scanner;
-import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 public class Date_Formatter {
     public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class Date_Formatter {
         if (date_format.equals("yyyy-MM-dd")) {
             System.out.println(input);
         } else if (date_format.equals("MM-dd-yyy")) {
-            date = LocalDate.parse
+
 
         }
     }
