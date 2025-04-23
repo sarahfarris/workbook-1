@@ -50,6 +50,7 @@ public class Daily_Mood_Logger {
             System.out.println("Error");
         }
         System.out.println("Thank you for logging your mood.");
+        user_options();
 
     }
 
